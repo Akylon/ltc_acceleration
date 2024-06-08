@@ -1,0 +1,1 @@
+denseout in -1.0 1.0 out_noActivation -13.921895027160645 13.1157808303833 
