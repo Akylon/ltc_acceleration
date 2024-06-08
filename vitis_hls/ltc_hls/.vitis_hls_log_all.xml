@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Port 'states' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port." projectName="ltc_hls" solutionName="solution3" date="2024-05-30T18:35:14.282+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="ltc_hls" solutionName="solution3" date="2024-05-30T18:35:14.112+0200" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'evaluate.7' to 'evaluate_7'." projectName="ltc_hls" solutionName="solution3" date="2024-05-30T18:31:12.334+0200" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'evaluate.7_Pipeline_VITIS_LOOP_122_2' to 'evaluate_7_Pipeline_VITIS_LOOP_122_2'." projectName="ltc_hls" solutionName="solution3" date="2024-05-30T18:31:09.441+0200" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'quantMul&lt;8ul, 8ul, -6, -6, -6>' to 'quantMul_8ul_8ul_6_6_6_s'." projectName="ltc_hls" solutionName="solution3" date="2024-05-30T18:31:09.429+0200" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'evaluate.1' to 'evaluate_1'." projectName="ltc_hls" solutionName="solution3" date="2024-05-30T18:31:09.416+0200" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'evaluate.1_Pipeline_VITIS_LOOP_122_2' to 'evaluate_1_Pipeline_VITIS_LOOP_122_2'." projectName="ltc_hls" solutionName="solution3" date="2024-05-30T18:31:09.403+0200" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'evaluate.2' to 'evaluate_2'." projectName="ltc_hls" solutionName="solution3" date="2024-05-30T18:31:09.392+0200" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'evaluate.2_Pipeline_VITIS_LOOP_122_2' to 'evaluate_2_Pipeline_VITIS_LOOP_122_2'." projectName="ltc_hls" solutionName="solution3" date="2024-05-30T18:31:09.382+0200" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'evaluate.5' to 'evaluate_5'." projectName="ltc_hls" solutionName="solution3" date="2024-05-30T18:31:09.371+0200" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'evaluate.5_Pipeline_VITIS_LOOP_122_2' to 'evaluate_5_Pipeline_VITIS_LOOP_122_2'." projectName="ltc_hls" solutionName="solution3" date="2024-05-30T18:31:09.356+0200" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'activation_tanh_optimal&lt;8ul, -1>' to 'activation_tanh_optimal_8ul_1_s'." projectName="ltc_hls" solutionName="solution3" date="2024-05-30T18:31:09.344+0200" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'quantMul&lt;8ul, 8ul, -1, -7, -6>' to 'quantMul_8ul_8ul_1_7_6_s'." projectName="ltc_hls" solutionName="solution3" date="2024-05-30T18:31:09.324+0200" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'evaluate.6' to 'evaluate_6'." projectName="ltc_hls" solutionName="solution3" date="2024-05-30T18:31:09.312+0200" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'evaluate.6_Pipeline_VITIS_LOOP_122_2' to 'evaluate_6_Pipeline_VITIS_LOOP_122_2'." projectName="ltc_hls" solutionName="solution3" date="2024-05-30T18:31:09.300+0200" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'activation_relu&lt;ap_int&lt;8> >' to 'activation_relu_ap_int_8_s'." projectName="ltc_hls" solutionName="solution3" date="2024-05-30T18:31:09.269+0200" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'QuantAdd&lt;8ul, -3, -3, -3>' to 'QuantAdd_8ul_3_3_3_s'." projectName="ltc_hls" solutionName="solution3" date="2024-05-30T18:31:09.257+0200" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'evaluate.3' to 'evaluate_3'." projectName="ltc_hls" solutionName="solution3" date="2024-05-30T18:31:09.245+0200" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'evaluate.3_Pipeline_VITIS_LOOP_122_2' to 'evaluate_3_Pipeline_VITIS_LOOP_122_2'." projectName="ltc_hls" solutionName="solution3" date="2024-05-30T18:31:09.234+0200" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'evaluate.4' to 'evaluate_4'." projectName="ltc_hls" solutionName="solution3" date="2024-05-30T18:31:09.226+0200" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'evaluate.4_Pipeline_VITIS_LOOP_122_2' to 'evaluate_4_Pipeline_VITIS_LOOP_122_2'." projectName="ltc_hls" solutionName="solution3" date="2024-05-30T18:31:09.195+0200" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

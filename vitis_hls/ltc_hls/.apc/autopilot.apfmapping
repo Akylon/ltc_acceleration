@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="LTC.h" path="E:\Projekte\MSE_Projektarbeit2\abgabe_openHardware\dd\ltc_acceleration\vitis_hls\src\LTC.h"/>
+    <originFiles name="QuantAdder.h" path="E:\Projekte\MSE_Projektarbeit2\abgabe_openHardware\dd\ltc_acceleration\vitis_hls\src\QuantAdder.h"/>
+    <originFiles name="activation_relu.h" path="E:\Projekte\MSE_Projektarbeit2\abgabe_openHardware\dd\ltc_acceleration\vitis_hls\src\activation_relu.h"/>
+    <originFiles name="activation_sigmoid.h" path="E:\Projekte\MSE_Projektarbeit2\abgabe_openHardware\dd\ltc_acceleration\vitis_hls\src\activation_sigmoid.h"/>
+    <originFiles name="activation_tanh.cpp" path="E:\Projekte\MSE_Projektarbeit2\abgabe_openHardware\dd\ltc_acceleration\vitis_hls\src\activation_tanh.cpp"/>
+    <originFiles name="activation_tanh.h" path="E:\Projekte\MSE_Projektarbeit2\abgabe_openHardware\dd\ltc_acceleration\vitis_hls\src\activation_tanh.h"/>
+    <originFiles name="compileTimeFunctions.h" path="E:\Projekte\MSE_Projektarbeit2\abgabe_openHardware\dd\ltc_acceleration\vitis_hls\src\compileTimeFunctions.h"/>
+    <originFiles name="dense.h" path="E:\Projekte\MSE_Projektarbeit2\abgabe_openHardware\dd\ltc_acceleration\vitis_hls\src\dense.h"/>
+    <originFiles name="linMapping.h" path="E:\Projekte\MSE_Projektarbeit2\abgabe_openHardware\dd\ltc_acceleration\vitis_hls\src\linMapping.h"/>
+    <originFiles name="matmul.h" path="E:\Projekte\MSE_Projektarbeit2\abgabe_openHardware\dd\ltc_acceleration\vitis_hls\src\matmul.h"/>
+    <originFiles name="matmul_quant.h" path="E:\Projekte\MSE_Projektarbeit2\abgabe_openHardware\dd\ltc_acceleration\vitis_hls\src\matmul_quant.h"/>
+    <originFiles name="model.cpp" path="E:\Projekte\MSE_Projektarbeit2\abgabe_openHardware\dd\ltc_acceleration\vitis_hls\src\model.cpp"/>
+    <originFiles name="model.h" path="E:\Projekte\MSE_Projektarbeit2\abgabe_openHardware\dd\ltc_acceleration\vitis_hls\src\model.h"/>
+    <originFiles name="quantMul.h" path="E:\Projekte\MSE_Projektarbeit2\abgabe_openHardware\dd\ltc_acceleration\vitis_hls\src\quantMul.h"/>
+    <originFiles name="quantOperations.h" path="E:\Projekte\MSE_Projektarbeit2\abgabe_openHardware\dd\ltc_acceleration\vitis_hls\src\quantOperations.h"/>
+    <originFiles name="sigmoid.cpp" path="E:\Projekte\MSE_Projektarbeit2\abgabe_openHardware\dd\ltc_acceleration\vitis_hls\src\sigmoid.cpp"/>
+    <originFiles name="sigmoid.h" path="E:\Projekte\MSE_Projektarbeit2\abgabe_openHardware\dd\ltc_acceleration\vitis_hls\src\sigmoid.h"/>
+    <originFiles name="walker_relu_tanh_quant_config.h" path="E:\Projekte\MSE_Projektarbeit2\abgabe_openHardware\dd\ltc_acceleration\vitis_hls\walker_relu_tanh_quant_config.h"/>
+  </source>
+  <testbench>
+    <originFiles name="ReportHandle.cpp" path="E:\Projekte\MSE_Projektarbeit2\abgabe_openHardware\dd\ltc_acceleration\vitis_hls\testbenches\ReportHandle.cpp"/>
+    <originFiles name="ReportHandle.h" path="E:\Projekte\MSE_Projektarbeit2\abgabe_openHardware\dd\ltc_acceleration\vitis_hls\testbenches\ReportHandle.h"/>
+    <originFiles name="data_loader.cpp" path="E:\Projekte\MSE_Projektarbeit2\abgabe_openHardware\dd\ltc_acceleration\vitis_hls\testbenches\data_loader.cpp"/>
+    <originFiles name="data_loader.h" path="E:\Projekte\MSE_Projektarbeit2\abgabe_openHardware\dd\ltc_acceleration\vitis_hls\testbenches\data_loader.h"/>
+    <originFiles name="dense_test.cpp" path="E:\Projekte\MSE_Projektarbeit2\abgabe_openHardware\dd\ltc_acceleration\vitis_hls\testbenches\dense_test.cpp"/>
+    <originFiles name="dense_test.h" path="E:\Projekte\MSE_Projektarbeit2\abgabe_openHardware\dd\ltc_acceleration\vitis_hls\testbenches\dense_test.h"/>
+    <originFiles name="export_validation_data.cpp" path="E:\Projekte\MSE_Projektarbeit2\abgabe_openHardware\dd\ltc_acceleration\vitis_hls\testbenches\export_validation_data.cpp"/>
+    <originFiles name="export_validation_data.h" path="E:\Projekte\MSE_Projektarbeit2\abgabe_openHardware\dd\ltc_acceleration\vitis_hls\testbenches\export_validation_data.h"/>
+    <originFiles name="ltc_test.cpp" path="E:\Projekte\MSE_Projektarbeit2\abgabe_openHardware\dd\ltc_acceleration\vitis_hls\testbenches\ltc_test.cpp"/>
+    <originFiles name="ltc_test.h" path="E:\Projekte\MSE_Projektarbeit2\abgabe_openHardware\dd\ltc_acceleration\vitis_hls\testbenches\ltc_test.h"/>
+    <originFiles name="model_test.cpp" path="E:\Projekte\MSE_Projektarbeit2\abgabe_openHardware\dd\ltc_acceleration\vitis_hls\testbenches\model_test.cpp"/>
+    <originFiles name="model_test.h" path="E:\Projekte\MSE_Projektarbeit2\abgabe_openHardware\dd\ltc_acceleration\vitis_hls\testbenches\model_test.h"/>
+    <originFiles name="quantMulAdd_test.cpp" path="E:\Projekte\MSE_Projektarbeit2\abgabe_openHardware\dd\ltc_acceleration\vitis_hls\testbenches\quantMulAdd_test.cpp"/>
+    <originFiles name="quantMulAdd_test.h" path="E:\Projekte\MSE_Projektarbeit2\abgabe_openHardware\dd\ltc_acceleration\vitis_hls\testbenches\quantMulAdd_test.h"/>
+    <originFiles name="quantMul_test.cpp" path="E:\Projekte\MSE_Projektarbeit2\abgabe_openHardware\dd\ltc_acceleration\vitis_hls\testbenches\quantMul_test.cpp"/>
+    <originFiles name="quantMul_test.h" path="E:\Projekte\MSE_Projektarbeit2\abgabe_openHardware\dd\ltc_acceleration\vitis_hls\testbenches\quantMul_test.h"/>
+    <originFiles name="reportHandle_test.cpp" path="E:\Projekte\MSE_Projektarbeit2\abgabe_openHardware\dd\ltc_acceleration\vitis_hls\testbenches\reportHandle_test.cpp"/>
+    <originFiles name="reportHandle_test.h" path="E:\Projekte\MSE_Projektarbeit2\abgabe_openHardware\dd\ltc_acceleration\vitis_hls\testbenches\reportHandle_test.h"/>
+    <originFiles name="sigmoid_test.cpp" path="E:\Projekte\MSE_Projektarbeit2\abgabe_openHardware\dd\ltc_acceleration\vitis_hls\testbenches\sigmoid_test.cpp"/>
+    <originFiles name="sigmoid_test.h" path="E:\Projekte\MSE_Projektarbeit2\abgabe_openHardware\dd\ltc_acceleration\vitis_hls\testbenches\sigmoid_test.h"/>
+    <originFiles name="tInterP_test.cpp" path="E:\Projekte\MSE_Projektarbeit2\abgabe_openHardware\dd\ltc_acceleration\vitis_hls\testbenches\tInterP_test.cpp"/>
+    <originFiles name="tInterP_test.h" path="E:\Projekte\MSE_Projektarbeit2\abgabe_openHardware\dd\ltc_acceleration\vitis_hls\testbenches\tInterP_test.h"/>
+    <originFiles name="tanh_optimal_test.cpp" path="E:\Projekte\MSE_Projektarbeit2\abgabe_openHardware\dd\ltc_acceleration\vitis_hls\testbenches\tanh_optimal_test.cpp"/>
+    <originFiles name="tanh_optimal_test.h" path="E:\Projekte\MSE_Projektarbeit2\abgabe_openHardware\dd\ltc_acceleration\vitis_hls\testbenches\tanh_optimal_test.h"/>
+    <originFiles name="tanh_test.cpp" path="E:\Projekte\MSE_Projektarbeit2\abgabe_openHardware\dd\ltc_acceleration\vitis_hls\testbenches\tanh_test.cpp"/>
+    <originFiles name="tanh_test.h" path="E:\Projekte\MSE_Projektarbeit2\abgabe_openHardware\dd\ltc_acceleration\vitis_hls\testbenches\tanh_test.h"/>
+    <originFiles name="testMain.cpp" path="E:\Projekte\MSE_Projektarbeit2\abgabe_openHardware\dd\ltc_acceleration\vitis_hls\testbenches\testMain.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>
