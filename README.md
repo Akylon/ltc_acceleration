@@ -75,7 +75,8 @@ After setting up the solution the **C simulation** can be started. If it ran wih
 2. Connect PC with Kria via USB-2 Micro (J4) for serial communication using the UART interface of the Kria.
 3. Plug the power up the Kria Platform.
 4. Manually override bootmode to JTAG bootmode, since the Platform is per default in SD card bootmode. This can be done by typing the following commands into the XSCT console, while the Platform is connected via JTAG. More info about this is found [here](https://xilinx.github.io/kria-apps-docs/creating_applications/2022.1/build/html/docs/bootmodes.html).
-   1. targets -set -filter {name=~ "PSU"}
+   1. connect
+   2. targets -set -filter {name=~ "PSU"}
    2. mwr 0xffca0010 0x0
    3. mwr 0xff5e0200 0x0100
    4. rst -system
