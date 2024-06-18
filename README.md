@@ -8,12 +8,12 @@ This readme file requires to specify folder and file locations, for which the va
 
 ## 2 Setup
 ### 2.1 Tools
-- Python
+- Python 3.9 or later
 - TensorFlow 2.10.0 or later. (The newest version of TensorFlow does not work with the scripts provided.)
 - Vitis 2022.2
 - Vitis HLS 2022.2
 - Vivado 2022.2
-- 
+
 ### 2.2 Downloading the Dataset
 The first thing is to download the training dataset, by calling the file donwload_dataset.sh in a bash console with
 ```bash
@@ -40,19 +40,19 @@ The behaviour can be checked regardless by using the outputs observed in the C S
 
 ### 2.5 Vivado Project
 
-### 3 Deploy Pipeline
+## 3 Deploy Pipeline
 The image below visualises the deploy pipeline. There are two flows of which the first results in a C model running on a single core of the Cortex-A53. The second flow results in the model running on the FPGA as a memory mapped accelerator.
 
 ![image](./readmeResources/pipeline.png)
 
-#### 3.1 C Model Flow
+### 3.1 C Model Flow
 1. Train the model using the script **WS/mdoel/training.py**, which trains and exports the model as an h5 file into the folder **WS/model/data/walker_relu_tanh_checkpoint**. This step is optional, because a pretrained h5 file is delivered in this workspace.
 1. Generate the configuration file using the **WS/mdoel/export\_float\_model.py** script, which creates the file **WS/model/data/model\_export/walker\_relu\_tanh\_conifg.h**.
 1. Open the Vitis project and compile the firmware without the hls\_model\_task, since it requires the quantised configuration file.
 
 After setting up the solution the **C simulation** can be started. If it ran wihtout errors, then start the C Synthesis. When the synthesis completed successfully, then the IP Block can be exported using **Export RTL**. Export the IP Block into the folder **WS/ipBlock**. Unzip the exported zip folder at the same location.
 
-#### 3.2 FGPA Flow
+### 3.2 FGPA Flow
 1. Train the model using the script **WS/mdoel/training.py**, which trains and exports the model as an h5 file into the folder **WS/model/data/walker_relu_tanh_checkpoint**. This step is optional, because a pretrained h5 file is delivered in this workspace.
 2. Export validation data using the script **WS/model/export\_float\_validation.py**, which exports text files, containing the inputs and outputs of all layers for 1937 different samples, into the folder **WS/model/data/walker_relu_tanh_checkpoint/float_validation**.
 3. Create the statistics data files using the script **WS/model/calculate\_shift\_stats.py**. These files are exported to folder **WS/model/data/model_quant_export**.
@@ -68,12 +68,13 @@ After setting up the solution the **C simulation** can be started. If it ran wih
 12. Run synthesis and implementation. Check the implementation results afterwards, if no timing issues are present, then continue with the next step.
 13. Generate and export hardware including the bit stream to folder **WS/Vivado**. Vivado can now be closed.
 14. Open the Vitis project and update hardware specification with the newly exported file from the step before.
-15. Compile the firmware.
+15. It is recommeded to clean the project.
+16. Compile the platform and the application.
   
-#### 4 Run Application
+## 4 Run Application
 1. Connect PC with Kria via JTAG programmer.
 2. Connect PC with Kria via USB-2 Micro (J4) for serial communication using the UART interface of the Kria.
-3. Plug the power up the Kria Platform.
+3. Power up the Kria Platform.
 4. Manually override bootmode to JTAG bootmode, since the Platform is per default in SD card bootmode. This can be done by typing the following commands into the XSCT console, while the Platform is connected via JTAG. More info about this is found [here](https://xilinx.github.io/kria-apps-docs/creating_applications/2022.1/build/html/docs/bootmodes.html).
    1. connect
    2. targets -set -filter {name=~ "PSU"}
@@ -86,7 +87,12 @@ After setting up the solution the **C simulation** can be started. If it ran wih
     * Stop Bits: 1
     * Parity: None
     * Flow Control: None
-6. 
+6. If the the program has not been compiled yet, then recompile the project. (A complete clean on your first set up is recommended)
+7. Program the device using the JTAG debugger. Sometimes the programming fails, after which a retry usualy solves the problem.
+8. After programming the program will halt at the first line of the main function. Place a breakpoint at **line 120** in the src file **hls_model_task.c**.
+9. Continue the program. The program will first execute the C-Model after which its outputs and execution time is reported on the serial port. After sending the report the C-Model starts the HLS-Model which also reports its output and execution time. It will continue with the C-Model and infinitely loop through both models.
 
+## 5 PMOD Connector (J2)
+The PMOD connector was used for more accurate time measurements. Currently pin 1 is set to high when either the C-Model or the HLS-Model starts its execution. The pin is set to low if either of them finished its execution. The program is set up that it starts with executing the C-Model. The time can be measured by measuring the pulse width of pin 1 with for example an oscilloscope.
 
 
