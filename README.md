@@ -4,7 +4,7 @@ This repository implements the CfC network introduced by [Ramin Hasani et al](ht
 If only running both models on the Kria Platform is of interest, then the pipeline can be omited, because the required output files are already present in this repository. Thus, Section "Deploy Pipeline" can be skipped and only sections "Vitis Project" and "Run Application" must be followed.
 
 ## 1 Folder Structure
-This readme file requires to specify folder and file locations, for which the variable WS is introduced. WS relates to the source folder, with which for example the readem location can be specified with WS/README.md.
+This readme file requires to specify folder and file locations, for which the variable WS is introduced. WS relates to the source folder, with which for example the readme location can be specified with WS/README.md.
 
 ## 2 Setup
 ### 2.1 Tools
