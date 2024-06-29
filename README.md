@@ -34,12 +34,7 @@ Open Vitis HLS project located in directory **WS/vitis_hls/ltc_hls**. Then add a
 Start the Vivado application and open the project file located at **WS/vivado/ltc_acceleration.xpr**. The top file is a block diagram, that contains the 2D-Walker IP block.
 
 ### 2.6 Vitis HLS Cosimulation
-The Cosimulation can check if the generated IP BLock behaves the same as the C Model. A problem with automising the test process, is that after each training session slightly different parameters are exported. This leads to small differences in the output with each newly exported configuration file.
-
-The behaviour can be checked regardless by using the outputs observed in the C Simulation report. They must be manually added to the testbench model_test.cpp. For that copy the observed output from the C Simulation report to the variable "expected" in the testbench model_test.cpp. Since both the C Model and the Comsimulation are fed with the same input.
-
-the Cosimulation may be started to check if it behaves the same as the C Model. This requires that 
-
+The Cosimulation can check if the generated IP BLock behaves the same as the C Model. A problem with automising the test process, is that after each training session slightly different parameters are exported. This leads to small differences in the output with each newly exported configuration file. The behaviour can be checked regardless by using the outputs observed in the C Simulation report. They must be manually added to the testbench model_test.cpp. For that copy the observed output from the C Simulation report to the variable "expected" in the testbench model_test.cpp. Since both the C Model and the Comsimulation are fed with the same input, it is expected that both give the same results.
 
 ## 3 Deploy Pipeline
 The image below visualises the deploy pipeline. There are two flows of which the first results in a C model running on a single core of the Cortex-A53. The second flow results in the model running on the FPGA as a memory mapped accelerator.
