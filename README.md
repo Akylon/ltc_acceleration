@@ -9,7 +9,7 @@ This readme file requires to specify folder and file locations, for which the va
 ## 2 Setup
 ### 2.1 Tools
 - Python 3.9 or later
-- TensorFlow 2.10.0 or later. (The newest version of TensorFlow does not work with the scripts provided.)
+- TensorFlow 2.10.0 or later. (Since Tensorflow 2.14 keras.layers.AbstractRNNCell is not supported, which causes an error.)
 - Vitis 2022.2
 - Vitis HLS 2022.2
 - Vivado 2022.2
